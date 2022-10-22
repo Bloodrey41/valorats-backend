@@ -63,4 +63,4 @@ def get_data(url):
 
             data.append(agent_data)
 
-    return data
+    return tuple(data)
