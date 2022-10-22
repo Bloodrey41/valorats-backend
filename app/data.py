@@ -63,4 +63,8 @@ def get_data(url):
 
             data.append(agent_data)
 
-    return tuple(data)
+    res = []
+
+    [res.append(x) for x in data if x not in res]
+
+    return res
